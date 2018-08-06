@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="CNM - Desenvolvimento" />
+  <meta name="description" content="" />
+  <meta name="keywords" content=""/>
+  <meta name="robots" content="index, follow" />
+  
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png">
+
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/demo.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/geral.css">
+
+  <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="selectivizr.js"></script>
+    <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+  <![endif]-->
+
+</head>
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
+<section class="box-carosel owl-carousel owl-theme">
+  <figure class="item">
+    <img src="assets/img/foto-1.jpg" alt="">
+  </figure>
+  <figure class="item">
+    <img src="assets/img/foto-2.jpg" alt="">
+  </figure>
+  <figure class="item">
+    <img src="assets/img/foto-3.jpg" alt="">
+  </figure>
+</section>
+
+<section class="contDown">
+  <div id="contador" class="box-contador">
+    <div class="box-data">
+      <p id="dias">248</p>
+      <p class="text-contator">Dias</p>
+    </div>
+
+    <div class="box-data">
+      <p id="horas">248</p>
+      <p class="text-contator">Horas</p>
+    </div>
+
+    <div class="box-data">
+      <p id="minutos">36</p>
+      <p class="text-contator">Minutos</p>
+    </div>
+
+    <div class="box-data">
+      <p id="segundos">54</p>
+      <p class="text-contator">Segundos</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <script type="text/javascript">  
+     var dataMarcha2018 = '2018/10/14';
+     $('#contador').countdown(dataMarcha2018)
+      .on('update.countdown', function(event) {
+        $('#dias').html(event.strftime('%D'));
+        $('#horas').html(event.strftime('%H'));
+        $('#minutos').html(event.strftime('%M'));
+        $('#segundos').html(event.strftime('%S'));
+      })
+      .on('finish.countdown', function(event) {
+        $('#dias').html(0);
+        $('#horas').html(event.strftime('%H'));
+        $('#minutos').html(event.strftime('%M'));
+        $('#segundos').html(event.strftime('%S'));
+      });
+
+
+</script>
+
+
+  </body>
+</html>
